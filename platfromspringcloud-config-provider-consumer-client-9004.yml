@@ -17,7 +17,7 @@ eureka:
       defaultZone:  http://localhost:9005/eureka
       #defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: platformspringcloud-provider-msgandlog-9003       #好好理解一下这是什么东西？
+    instance-id: platfomrspringcloud-consumer-test-9004       #好好理解一下这是什么东西？
     prefer-ip-address: true    #访问路径可以显示IP地址
 
 info: 
@@ -29,13 +29,11 @@ info:
 server: 
     port: 9004
 
-  
 spring:
    profiles: test
    application:
     name:  platfomrspringcloud-consumer-test-9004                                 # 对外的微服务接口名字 
   
-
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 

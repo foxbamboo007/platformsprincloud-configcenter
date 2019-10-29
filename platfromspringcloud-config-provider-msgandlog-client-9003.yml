@@ -43,7 +43,7 @@ info:
   build.version: $project.version$
 ---
 server: 
-    port: 9002
+    port: 9003
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.test.springcloud.pojo    # 所有Entity别名类所在包
@@ -65,16 +65,6 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200          # 等待连接获取的最大超时时间
-   redis:
-    database: 0
-    timeout: 0
-    host: 127.0.0.1                                         # Redis服务器地址
-    port: 6379                                              # Redis服务器连接端口                                        
-    pool:                                                   # 连接池最大连接数（使用负值表示没有限制）
-      max-active: 8                                         # 连接池最大阻塞等待时间（使用负值表示没有限制）
-      max-wait: -1                                          # 连接池中的最大空闲连接
-      max-idle: 8                                           # 连接池中的最小空闲连接
-      min-idle: 0
 
 eureka:
   client: #客户端注册进eureka服务列表内

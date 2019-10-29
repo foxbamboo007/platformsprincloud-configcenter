@@ -14,7 +14,7 @@ mybatis:
 spring:
    profiles: dev
    application:
-    name: testspringcloud-config-provider-login-client-9001                           # 对外的微服务接口名字 
+    name: platfromspringcloud-provider-login-9001                           # 对外的微服务接口名字 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -33,12 +33,12 @@ eureka:
       defaultZone:  http://localhost:7001/eureka
       #defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: testspringcloud-dept-8001    #好好理解一下这是什么东西？
+    instance-id: platfromspringcloud-provider-login-9001      #好好理解一下这是什么东西？
     prefer-ip-address: true    #访问路径可以显示IP地址
 
 info: 
-  app.name: testspringcloud 微服务部门服务提供者
-  company.name: com.lixiaochi.springcloud
+  app.name: platformspringcloud 登录微服务提供者
+  company.name: com.yaxin.project
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -53,7 +53,7 @@ mybatis:
 spring:
    profiles: test
    application:
-    name:  testspringcloud-config-provider-login-client-9001                                # 对外的微服务接口名字 
+    name:  platfromspringcloud-config-provider-login-client-9001                                # 对外的微服务接口名字 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -72,11 +72,11 @@ eureka:
       defaultZone:  http://localhost:7001/eureka
       #defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: testspringcloud-dept-8001    #好好理解一下这是什么东西？
+    instance-id: platfromspringcloud-provider-login-9001    #好好理解一下这是什么东西？
     prefer-ip-address: true    #访问路径可以显示IP地址
 
 info: 
-  app.name: testspringcloud 微服务部门服务提供者
-  company.name: com.lixiaochi.springcloud
+  app.name: platformspringcloud 登录微服务提供者
+  company.name:com.yaxin.project
   build.artifactId: $project.artifactId$
   build.version: $project.version$

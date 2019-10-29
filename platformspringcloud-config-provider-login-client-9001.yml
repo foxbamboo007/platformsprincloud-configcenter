@@ -77,6 +77,6 @@ eureka:
 
 info: 
   app.name: platformspringcloud 登录微服务提供者
-  company.name:com.yaxin.project
+  company.name: com.yaxin.project
   build.artifactId: $project.artifactId$
   build.version: $project.version$

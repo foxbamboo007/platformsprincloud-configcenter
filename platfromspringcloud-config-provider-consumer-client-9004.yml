@@ -20,11 +20,6 @@ eureka:
     instance-id: platfomrspringcloud-consumer-test-9004       #好好理解一下这是什么东西？
     prefer-ip-address: true    #访问路径可以显示IP地址
 
-info: 
-  app.name: platformspringcloud   订购微服务提供者
-  company.name: com.yaxin.project
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
 ---
 server: 
     port: 9004
@@ -43,8 +38,4 @@ eureka:
     instance-id: platfomrspringcloud-consumer-test-9004   #好好理解一下这是什么东西？
     prefer-ip-address: true    #访问路径可以显示IP地址
 
-info: 
-  app.name: platformspringcloud 订购微服务提供者
-  company.name: com.yaxin.project
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+

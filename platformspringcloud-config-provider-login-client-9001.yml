@@ -53,7 +53,7 @@ mybatis:
 spring:
    profiles: test
    application:
-    name:  platfromspringcloud-config-provider-login-client-9001                                # 对外的微服务接口名字 
+    name:  platfromspringcloud-config-provider-login-9001                                # 对外的微服务接口名字 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包

@@ -18,9 +18,9 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
-    url: jdbc:mysql://localhost:3306/springcloudtest?serverTimezone=UTC        # 数据库名称注意?serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://134.160.36.165:3320/4atstdb?serverTimezone=UTC        # 数据库名称注意?serverTimezone=UTC
+    username: tst4a
+    password: iKst_870
     dbcp2:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
@@ -67,9 +67,9 @@ spring:
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
-    url: jdbc:mysql://localhost:3306/springcloudtest?serverTimezone=UTC        # 数据库名称注意?serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://134.160.36.165:3320/4atstdb?serverTimezone=UTC        # 数据库名称注意?serverTimezone=UTC
+    username: tst4a
+    password: iKst_870
     dbcp2:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
